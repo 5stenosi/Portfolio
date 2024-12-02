@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'shark': {
+                            '50': '#f4f6f7',
+                            '100': '#e3e8ea',
+                            '200': '#cad3d7',
+                            '300': '#a5b4bb',
+                            '400': '#788d98',
+                            '500': '#5d717d',
+                            '600': '#505f6a',
+                            '700': '#455159',
+                            '800': '#3e464c',
+                            '900': '#373d42',
+                            '950': '#2b3137',
+                        },
+                    },
+                },
+            }
+        }
+    </script>
+
+    <title>Davide Marsili - GitHub</title>
+</head>
+
+<body class="font-exo overflow-hidden">
+
+    <main class="w-full h-screen bg-shark-950 flex flex-col items-center justify-center text-neutral-100">
+        <img id="profile-avatar" class="rounded-full w-32 h-32 mb-4" alt="Profile Avatar">
+        <h1 id="profile-name" class="text-4xl mb-2"></h1>
+        <p id="profile-bio" class="text-xl mb-4"></p>
+        <p id="profile-repos" class="text-lg"></p>
+        <p id="profile-followers" class="text-lg"></p>
+        <p id="profile-following" class="text-lg"></p>
+        <p id="profile-location" class="text-lg"></p>
+        <p id="profile-blog" class="text-lg"></p>
+        <p id="profile-company" class="text-lg"></p>
+        <p id="profile-twitter" class="text-lg"></p>
+        <div id="repos-container" class="w-full mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+    </main>
+    
+    <script src="github.js"></script>
+
+</body>
+
+</html>

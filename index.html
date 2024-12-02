@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- TailwindCSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'shark': {
+                            '50': '#f4f6f7',
+                            '100': '#e3e8ea',
+                            '200': '#cad3d7',
+                            '300': '#a5b4bb',
+                            '400': '#788d98',
+                            '500': '#5d717d',
+                            '600': '#505f6a',
+                            '700': '#455159',
+                            '800': '#3e464c',
+                            '900': '#373d42',
+                            '950': '#2b3137',
+                        },
+                        'koromiko': {
+                            '50': '#fff9ed',
+                            '100': '#fff1d4',
+                            '200': '#ffdfa9',
+                            '300': '#ffc266',
+                            '400': '#fea439',
+                            '500': '#fc8713',
+                            '600': '#ed6c09',
+                            '700': '#c55109',
+                            '800': '#9c4010',
+                            '900': '#7e3610',
+                            '950': '#441a06',
+                        },
+                    },
+                },
+            }
+        }
+    </script>
+
+    <title>Davide Marsili - Portfolio</title>
+</head>
+
+<body class="font-exo overflow-hidden">
+
+    <main class="w-full h-screen bg-neutral-100 flex justify-center items-center">
+        <div class="w-11/12 h-5/6 grid grid-rows-4 grid-cols-5 gap-5">
+            <div id="box1"
+                class="relative rounded-3xl row-span-4 col-span-2 p-[5%] bg-koromiko-300 flex flex-col justify-end overflow-hidden group">
+                <!-- Profile Picture -->
+                <img src="assets/image (3).png" alt="My face" class="absolute top-11 right-2.5 size-[22rem] rounded-full z-10">
+                <div class="absolute top-[6.5rem] right-16 size-60 rounded-full bg-[#7A9CC6]"></div>
+                <div class="absolute top-20 right-10 size-[18rem] rounded-full border-8 border-neutral-100"></div>
+                <!-- Name, Surname, Email -->
+                <h2 class="text-neutral-800 text-4xl md:text-5xl lg:text-6xl font-medium duration-500">Davide</h2>
+                <h2 class="text-neutral-800 text-5xl md:text-6xl lg:text-7xl font-medium duration-500">Marsili</h2>
+                <h2 class="text-neutral-800 text-lg md:text-xl lg:text-2xl duration-500">
+                    davidemarsili4@gmail.com
+                    <i class="fa-solid fa-inbox fa-sm text-neutral-800 translate-y-0.5"></i>
+                </h2>
+                <!-- Decor -->
+                <h2
+                    class="absolute -top-2.5 left-0 text-neutral-100 text-lg md:text-xl lg:text-2xl font-bold text-clip text-nowrap duration-500">
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</h2>
+                <h2
+                    class="absolute bottom-3 left-0 text-neutral-100 text-lg md:text-xl lg:text-2xl font-bold text-clip text-nowrap duration-500">
+                    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</h2>
+            </div>
+            <div id="box2" class="rounded-3xl relative row-span-1 col-span-3 select-none flex items-end group">
+                <h1 id="portfolio"
+                    class="text-neutral-800 text-7xl md:text-8xl lg:text-9xl xl:text-[9rem] lg:group-hover:tracking-wider xl:group-hover:tracking-widest font-bold duration-500">
+                    Portfolio</h1>
+            </div>
+            <div id="box3" class="rounded-3xl row-span-2 col-span-2 bg-green-500"></div>
+            <div id="box4" class="rounded-3xl row-span-2 col-span-1 bg-green-500"></div>
+
+            <a id="box5" href="github.html"
+                class="rounded-3xl row-span-1 col-span-1 bg-shark-950 flex flex-col justify-center items-center overflow-clip group duration-500">
+                <i id="github-icon" class="fa-brands fa-github text-neutral-100 text-6xl duration-500"></i>
+            </a>
+
+            <div id="box6" class="rounded-3xl relative row-span-1 col-span-2 group">
+                <div
+                    class="absolute left-0 w-full h-full rounded-3xl border-4 border-neutral-800 flex justify-center items-center">
+                </div>
+                <button
+                    class="absolute right-0 w-full group-hover:w-2/3 h-full rounded-3xl bg-neutral-800 flex justify-center items-center duration-500">
+                    <h3 id="about-me-text" class="text-neutral-100 text-4xl font-semibold">About me
+                    </h3>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="animation.js"></script>
+    <script src="color.js"></script>
+</body>
+
+</html>
